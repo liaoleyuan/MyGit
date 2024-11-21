@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>测试文件</h1>
-</body>
-</html>
+<style type="text/css">
+    div {
+      width: 100px;
+      height: 100px;
+      background: tomato;
+      /* 
+              transition：定义过渡动画
+              border-radius：过渡的css属性
+              1s ：动画过渡时间
+              ease： 速度慢快慢
+              0s ：延迟时间0s 
+          */
+      transition: border-radius 1s ease 0s;
+      margin: 50px 10px;
+    }
+    .box:hover {
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
